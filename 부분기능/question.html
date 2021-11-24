@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/question.css" />
+    <link rel="stylesheet" href="../css/question.css" />
     <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
 
     <title>Document</title>
@@ -23,18 +23,23 @@
         </div>
         <div class="q_output" id="q_output">
           <!-- <input id="q_essay" type="text" placeholder="텍스트 입력" readonly /> -->
-          <div class="q_sel">
-            <input id="q_select" type="radio" readonly onclick="if(this.checked){this.checked=false; focusOption()}" />
-            <input id="q_selOption" type="text" placeholder="옵션" />
+          <!-- <div class="q_sel">
+                <input class="q_select" type="radio" readonly />
+                <input class="q_selOption" type="text" placeholder="옵션" />
+          </div> -->
+          <!-- <div class="q_che">
+            <input type="checkbox" class="q_check"  readonly />
+            <input type="text" class="q_cheOption" placeholder="옵션" />
+          </div> -->
           </div>
-        </div>
         <div class="q_btn">
-          <button id="q_selAdd"><i class="bx bx-add-to-queue"></i></button>
-          <button id="q_del" onclick="addSelect()"><i class="bx bx-trash"></i></button>
+          <button type="button" id="q_selDel" onclick="selDelBtn()"><i class="bx bx-x"></i></button>
+          <button type="button" id="q_selAdd" onclick="selAddBtn()"><i class="bx bx-plus"></i></button>
+          <button type="button" id="q_del" ><i class="bx bx-trash"></i></button>    
         </div>
       </div>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/question.js"></script>
+    <script src="../js/question.js"></script>
   </body>
 </html>

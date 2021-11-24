@@ -21,14 +21,14 @@
       </div>
       <ul class="nav_list">
         <li>
-          <a href="#">
+          <a href="index.html">
             <i class="bx bx-home"></i>
             <span class="links_name">메인화면</span>
           </a>
           <span class="tooltip">메인화면</span>
         </li>
         <li>
-          <a href="#">
+          <a href="edit.html">
             <i class="bx bx-book-add"></i>
             <span class="links_name">설문지 작성</span>
           </a>
@@ -50,7 +50,7 @@
         <input type="text" class="search_box" id="search_box" placeholder="검색" />
       </div>
       <div class="mag"></div>
-      <div class="main">
+      <div class="main" id="main">
         <div class="quest">
           <div class="q_title">
             <input type="text" placeholder="질문 제목" />
@@ -62,26 +62,26 @@
             </select>
           </div>
           <div class="q_output" id="q_output">
-            <!-- <input id="q_essay" type="text" placeholder="텍스트 입력" readonly /> -->
-            <!-- <div class="q_sel">
+            <!-- <input id="q_essay" type="text" placeholder="텍스트 입력" readonly />
+            <div class="q_sel">
                   <input class="q_select" type="radio" readonly />
                   <input class="q_selOption" type="text" placeholder="옵션" />
-            </div> -->
-            <!-- <div class="q_che">
+            </div> 
+              <div class="q_che">
               <input type="checkbox" class="q_check"  readonly />
               <input type="text" class="q_cheOption" placeholder="옵션" />
-            </div> -->
+            </div>   -->
             </div>
           <div class="q_btn">
-            <button type="button" id="q_selDel" onclick="selDelBtn()"><i class="bx bx-x"></i></button>
-            <button type="button" id="q_selAdd" onclick="selAddBtn()"><i class="bx bx-plus"></i></button>
-            <button type="button" id="q_del" ><i class="bx bx-trash"></i></button>    
+            <button type="button" class="q_selDel" onclick="selDelBtn()"><i class="bx bx-x"></i></button>
+            <button type="button" class="q_selAdd" onclick="selAddBtn()"><i class="bx bx-plus"></i></button>
+            <button type="button" class="q_del" ><i class="bx bx-trash"></i></button>    
           </div>
         </div>
         <div class="quickmenu">
           <ul>
             <li>
-              <a href="#">
+              <a href="#" onclick="addQuestion()">
                 <i class="bx bx-plus-circle"></i>
               </a>
               <span class="quick_name">질문 추가</span>
