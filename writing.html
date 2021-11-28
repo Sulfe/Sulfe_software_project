@@ -10,13 +10,6 @@
   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
   <!-- css link -->
   <link rel="stylesheet" href="/css/style.css" />
-
-  <script type="text/javaScript">
-      function movewriting(){
-           location.href = "/writing.html";
-      }
-      </script>
-
 </head>
 
 <body>
@@ -60,29 +53,19 @@
     </div>
     <div class="mag"></div>
     <div class="main">
-      <table class="board_list">
-        <thead>
-          <tr>
-            <th>번호</th>
-            <th>제목</th>
-            <th>작성자</th>
-            <th>날짜</th>
-            <th>조회수</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>77</td>
-            <td>이용자 셈플 설문조사</td>
-            <td>홍길동</td>
-            <td>2021-11-26</td>
-            <td>1</td>
-          </tr>
-        </tbody>
-      </table>
-      <div>
-        <button type="button" onclick="movewriting()" class="writing"><i class='bx bx-pencil'></i></button>
+      <div class="wri">
+        <div class="wri_title">
+          <span>제목</span>
+          <input type="text">
+        </div>
+
+        <span class="wri_content">내용</span>
+        <div class="wri_content_input">
+          <textarea type="text"></textarea>
+        </div>
       </div>
+      <button class="writing_wr" onclick=""><i class='bx bx-pencil'></i></button>
+
     </div>
 
   </div>

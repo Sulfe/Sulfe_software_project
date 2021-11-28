@@ -36,19 +36,19 @@ var sel = '<div class="q_sel"><input class="q_select" type="radio" readonly /><i
 var check = '<div class="q_che"> <input type="checkbox" class="q_check" readonly /><input type="text" class="q_cheOption" placeholder="옵션" /></div>'
 
 function selAddBtn() { 
-  $(this).parents().siblings('.q_output').append(sel);
+  $('.q_output').append(sel);
 }
 
 function selDelBtn() {
-  $(this).siblings('.q_output').html(sel);
+  $('.q_output').html(sel);
 }
 
 function cheAddBtn() {
-  $(this).siblings('.q_output').append(check);
+  $('.q_output').append(check);
 }
 
 function cheDelBtn() {
-  $(this).siblings('.q_output').html(check);
+  $('.q_output').html(check);
 }
 
 var addQuestionDiv = ' <div class="quest"><div class="q_title"><input type="text" placeholder="질문 제목" /><select class="q_type" id="q_type"><option value="00">질문 유형</option><option value="01">주관식</option><option value="02">객관식</option><option value="03">체크박스</option></select></div><div class="q_output" id="q_output"></div><div class="q_btn"><button type="button" id="q_selDel" onclick="selDelBtn()"><i class="bx bx-x"></i></button><button type="button" id="q_selAdd" onclick="selAddBtn()"><i class="bx bx-plus"></i></button><button type="button" id="q_del" ><i class="bx bx-trash"></i></button></div></div>'
