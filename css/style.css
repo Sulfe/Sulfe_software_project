@@ -508,7 +508,7 @@ body {
 
 .writing_wr {
   position: relative;
-  left: 70%;
+  left: 73%;
   margin-top: 15px;
   width: 40px;
   height: 40px;
@@ -635,6 +635,7 @@ body {
   font-size: 15px;
   border: none;
   border-bottom: 1.3px solid rgb(218, 220, 224);
+  margin: 10px 0 10px 0;
 }
 
 .table_input1:focus {
@@ -651,6 +652,7 @@ body {
   font-size: 15px;
   border: none;
   border-bottom: 1.3px solid rgb(218, 220, 224);
+  margin: 15px 0 15px 0;
 }
 
 .table_td textarea:focus {
@@ -666,6 +668,7 @@ body {
   font-size: 10px;
   border: none;
   border-bottom: 1.3px solid rgb(218, 220, 224);
+  margin: 10px 0 10px 0;
 }
 
 .table_input2:focus {
