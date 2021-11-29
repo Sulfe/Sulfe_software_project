@@ -665,13 +665,29 @@ body {
 .table_input2 {
   width: 800px;
   height: 30px;
-  font-size: 10px;
+  font-size: 14px;
   border: none;
   border-bottom: 1.3px solid rgb(218, 220, 224);
   margin: 10px 0 10px 0;
 }
 
 .table_input2:focus {
+  background-color: rgb(243, 243, 243);
+  border-bottom: 1.3px solid #6a34fd;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.table_input3 {
+  width: 800px;
+  height: 30px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1.3px solid rgb(218, 220, 224);
+  margin: 10px 0 10px 0;
+}
+
+.table_input3:focus {
   background-color: rgb(243, 243, 243);
   border-bottom: 1.3px solid #6a34fd;
   outline: none;

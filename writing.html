@@ -68,17 +68,23 @@
       <table class="write_tb">
         <tr class="table_title">
           <th class="table_th">제목</th>
-          <td class="table_td"><input class="table_input1" type="text"></td>
+          <td class="table_td"><input class="table_input1" type="text" placeholder="설문지 제목을 작성해주세요" maxlength="60"></td>
         </tr>
 
         <tr class="table_content">
           <th class="table_th">내용</th>
-          <td class="table_td"><textarea type="text"></textarea></td>
+          <td class="table_td"><textarea type="text" placeholder="설문지에 대한 설명을 작성해주세요" maxlength="2048"></textarea></td>
         </tr>
 
         <tr class="table_link">
           <th class="table_th">링크</th>
-          <td class="table_td"><input class="table_input2" type="text"></td>
+          <td class="table_td"><input class="table_input2" type="text" placeholder="구글 설문지에서 가져온 링크를 넣어주세요"
+              maxlength="2048"></td>
+        </tr>
+        <tr class="table_link">
+          <th class="table_th">비밀번호</th>
+          <td class="table_td"><input class="table_input3" type="password" placeholder="글 삭제, 수정시에 사용됩니다."
+              maxlength="12"></td>
         </tr>
       </table>
       <button class="writing_wr" onclick=""><i class='bx bx-pencil'></i></button>
