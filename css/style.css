@@ -698,3 +698,82 @@ body {
 .table_margin th {
   border-bottom: 2px solid rgb(218, 220, 224);
 }
+
+.member {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#member {
+  float: left;
+  width: 235px;
+}
+
+.member_img {
+  width: 160px;
+}
+
+.member_con {
+  border: 1px solid rgb(218, 220, 224);
+  width: 70px;
+}
+
+#howuse {
+  position: relative;
+  vertical-align: middle;
+  padding-left: 130px;
+  width: 1200px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1300px; /* 슬라이드할 사진과 마진 총 넓이 */
+  transition: 0.5s ease-out;
+  /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+}
+
+.slides li:first-child {
+  margin-left: 300px;
+}
+
+.slides li:not(:last-child) {
+  float: left;
+  margin-right: 200px;
+}
+
+.slides li {
+  float: left;
+}
+.controller span {
+  position: absolute;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px 20px;
+  top: 50%;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+/* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+.controller span:hover {
+  background-color: rgba(128, 128, 128, 0.11);
+}
+.prev {
+  left: 10px;
+}
+/* 이전 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+.prev:hover {
+  transform: translateX(-10px);
+}
+.next {
+  right: 10px;
+}
+/* 다음 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+.next:hover {
+  transform: translateX(10px);
+}

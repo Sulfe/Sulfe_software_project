@@ -4,5 +4,6 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "prettier.printWidth": 80,
-  "prettier.tabWidth": 2
+  "prettier.tabWidth": 2,
+  "liveServer.settings.port": 5501
 }
