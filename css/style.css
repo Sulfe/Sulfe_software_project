@@ -719,11 +719,12 @@ body {
 }
 
 #howuse {
+  left: 90px;
   position: relative;
   vertical-align: middle;
   padding-left: 130px;
   width: 1200px;
-  height: 500px;
+  height: 600px;
   overflow: hidden;
 }
 
@@ -731,18 +732,18 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 1300px; /* 슬라이드할 사진과 마진 총 넓이 */
+  width: 8000px; /* 슬라이드할 사진과 마진 총 넓이 */
   transition: 0.5s ease-out;
   /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
 }
 
 .slides li:first-child {
-  margin-left: 300px;
+  margin-left: 0px;
 }
 
 .slides li:not(:last-child) {
   float: left;
-  margin-right: 200px;
+  margin-right: 800px;
 }
 
 .slides li {

@@ -5,7 +5,7 @@ slideCount = slideImg.length
 prev = document.querySelector('.prev')
 next = document.querySelector('.next')
 slideWidth = 1400
-slideMargin = 300
+slideMargin = 600
 
 makeClone()
 initfunction()
