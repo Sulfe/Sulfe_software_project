@@ -55,35 +55,36 @@
 
   <div class="home_content">
     <div class="home_search">
-      <i class="bx bx-search"></i>
-      <input type="text" class="search_box" id="search_box" placeholder="검색" />
-    </div>
-    <div class="mag"></div>
-    <div class="main">
-      <table class="board_list">
-        <thead>
-          <tr>
-            <th style="width: 100px;">번호</th>
-            <th style="width: 500px;">제목</th>
-            <th style="width: 250px;">작성일</th>
-            <th style="width: 100px;">조회수</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="width: 100px; border-left: none;">77</td>
-            <td style="width: 500px;"><a href="content.html"> 이용자 셈플 설문조사</a></td>
-            <td style="width: 250px;">2021-11-26</td>
-            <td style="width: 100px; border-right: none;">1</td>
-          </tr>
-        </tbody>
-      </table>
-      <div>
-        <button type="button" onclick="movewriting()" class="writing"><i class='bx bx-pencil'></i></button>
+      <form method="get" action="http://www.google.co.kr/search" target="_blank">
+        <i class="bx bx-search"></i>
+        <input type="text" name="q" class="search_box" id="search_box" placeholder="Google 검색" />
+      </form>
+      <div class="mag"></div>
+      <div class="main">
+        <table class="board_list">
+          <thead>
+            <tr>
+              <th style="width: 100px;">번호</th>
+              <th style="width: 500px;">제목</th>
+              <th style="width: 250px;">작성일</th>
+              <th style="width: 100px;">조회수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 100px; border-left: none;">77</td>
+              <td style="width: 500px;"><a href="content.html"> 이용자 셈플 설문조사</a></td>
+              <td style="width: 250px;">2021-11-26</td>
+              <td style="width: 100px; border-right: none;">1</td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <button type="button" onclick="movewriting()" class="writing"><i class='bx bx-pencil'></i></button>
+        </div>
       </div>
-    </div>
 
-  </div>
+    </div>
 
   </div>
 
